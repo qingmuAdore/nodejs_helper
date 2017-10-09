@@ -1,0 +1,18 @@
+{
+  "author": "qingmuAdore",
+  "name": "pz.helper",
+  "version": "1.0.0",
+  "description": "helper",
+  "keywords": [
+    "helper"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/qingmuAdore/nodejs_helper.git"
+  },
+  "main": "index.js",
+  "license": "MIT",
+  "engines": {
+    "node": ">=0.10.0"
+  }
+}
