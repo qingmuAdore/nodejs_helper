@@ -107,6 +107,7 @@ o.trim();
         do: {
             fire: "fire"
         }
+    }
 }
 ```
 
