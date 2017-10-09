@@ -126,7 +126,7 @@ showArg.bind(null,1,2,3)(4,5)
 //print 1,2,3,4,5
 
 showArg.partial(null,1,2,3)(4,5)
-//print 4,5,1,2,3
+//print 4,5,1,2,3 
 ```
 
 - Promise
