@@ -152,12 +152,12 @@ show();
 > name
 
 ```js
-console.log(types.name(123)); //print Number
+console.log(type.name(123)); //print Number
 ```
 
 > is${Type} : isString,isNumber,isBoolean ... 
 
 ```js
-types.isAsyncFunction(async function(){}) //=> true
+type.isAsyncFunction(async function(){}) //=> true
 ```
 
