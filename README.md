@@ -150,6 +150,8 @@ show();
 
 ## type
 
+var type = require('pz.helper').type;
+
 > name
 
 ```js
