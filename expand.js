@@ -227,7 +227,7 @@ Function.prototype.partial = function (thisArg) {
 /**
  * 包裹方法
  *     # 执行最后处理方法 cb
- *     # 封装结果        {error,vlaue}
+ *     # 封装结果        {err,vlaue}
  * 
  * @param {Function} done 执行函数 
  */
@@ -236,6 +236,6 @@ Promise.prototype.wrap = function (done) {
     var P = this.constructor;
     return this.then(
         value => P.resolve(done()).then(() => { return { value: value } }),
-        reason => P.resolve(done()).then(() => { return { error: reason } })
+        reason => P.resolve(done()).then(() => { return { err: reason } })
     );
 }

@@ -134,7 +134,7 @@ showArg.partial(null,1,2,3)(4,5)
 > wrap(done)
 
  * @done (Function)  The done function  
- wrap the result {error,value}
+ wrap the result {err,value}
 
 ```js
 async function show() {
@@ -142,7 +142,7 @@ async function show() {
         reject('error');
     }).wrap();
 
-    console.log(res); //=> {error:'error'}
+    console.log(res); //=> {err:'error'}
 }
 
 show();
