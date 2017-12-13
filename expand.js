@@ -4,6 +4,9 @@
  * @desc 扩充系统类型的处理方法
  */
 
+var type = require('./type');
+
+
 /************************************************************
  * @type  Number
  ***********************************************************/
@@ -173,7 +176,7 @@ Object.prototype.trim = function () {
         } else if (typeof value === 'object') {
             this[key].trim();
         }
-        if (value && typeof value === 'object' && !Object.entries(value).length) delete this[key];
+        if (value && !type.isRegExp(value) && typeof value === 'object' && !Object.entries(value).length) delete this[key];
     }
     return this;
 }

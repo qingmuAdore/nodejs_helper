@@ -31,6 +31,7 @@ var types = {
     'Boolean',
     'Array',
     'Object',
+    'RegExp',
     'Function',
     'AsyncFunction',
     'Symbol',
