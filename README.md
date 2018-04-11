@@ -148,6 +148,17 @@ async function show() {
 show();
 ```
 
+> Promise.arouse(asyncFn)
+
+promisify asyncFunction
+
+```js
+async function show(){ return "infomation";}
+
+let promise = Promise.arouse(show);
+```
+
+
 ## type
 
 var type = require('pz.helper').type;

@@ -242,3 +242,13 @@ Promise.prototype.wrap = function (done) {
         reason => P.resolve(done()).then(() => { return { err: reason } })
     );
 }
+
+/** 
+ * 
+ * 将 AsyncFunction Promise化
+ * 
+ * @param {AsyncFunction} fn
+ */
+Promise.arouse = function (fn) {
+    return new Promise((resolve, reject) => { return fn().then(resolve, reject) });
+}
